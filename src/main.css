@@ -352,9 +352,18 @@ nav.navbar-inverse .navbar-nav>li>a:hover,nav.navbar-inverse .navbar-nav>li>a.Ac
     text-shadow: none;
 }
 
+.form-group {
+    width: 70%;
+    margin: 0 auto;
+}
+
+form > .btn {margin-left: 45%; margin-top: 1%}
+
 .form-group .help-block {
     display: none;
 }
+
+h2 {text-align: center}
 
 .form-group.has-error .help-block {
     display: block;

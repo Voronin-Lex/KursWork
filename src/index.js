@@ -12,6 +12,8 @@ import reducers from 'reducers'
 import Layout from 'containers/layout'
 import Phones from 'containers/phones'
 import Phone from 'containers/phone'
+import Form from "components/form/index";
+import Admin from "containers/admin/index";
 const store = createStore(reducers, composeWithDevTools(
     applyMiddleware(thunk)
 ))
@@ -22,11 +24,13 @@ ReactDOM.render(
     <Provider store={store}>
         <Router history={history}>
             <Route component={Layout}>
-                <Route path='/' component={Phones} />
+                <Route path='/home' component={Phones} />
                 <Route path='/categories/:id' component={Phones} />
             </Route>
             <Route path='/phones/:id' component={Phone} />
             <Route path='/basket' component={Basket} />
+            <Route path='/' component={Form}/>
+            <Route path='/admin' component={Admin}/>
         </Router>
     </Provider>,
     document.getElementById('root')
