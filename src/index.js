@@ -16,6 +16,7 @@ import Form from "components/form/index";
 import Admin from "containers/admin/index";
 import UsersPage from "containers/users/index";
 import AddUser from "containers/add_user/index";
+import AddPhone from "containers/create_phone/index";
 const store = createStore(reducers, composeWithDevTools(
     applyMiddleware(thunk)
 ))
@@ -35,6 +36,7 @@ ReactDOM.render(
             <Route path='/admin' component={Admin}/>
             <Route path='/users' component={UsersPage}/>
             <Route path='/add_user' component={AddUser}/>
+            <Route  path="/create" component={AddPhone}/>
         </Router>
     </Provider>,
     document.getElementById('root')
