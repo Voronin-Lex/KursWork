@@ -36,7 +36,7 @@ ReactDOM.render(
             <Route path='/admin' component={Admin}/>
             <Route path='/users' component={UsersPage}/>
             <Route path='/add_user' component={AddUser}/>
-            <Route  path="/create" component={AddPhone}/>
+            <Route  path='admin/create' component={AddPhone}/>
         </Router>
     </Provider>,
     document.getElementById('root')
