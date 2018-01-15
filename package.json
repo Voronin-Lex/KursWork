@@ -6,8 +6,6 @@
     "body-parser": "^1.16.0",
     "classnames": "^2.2.5",
     "express": "^4.14.0",
-    "lodash": "^4.17.4",
-    "mongodb": "^2.2.22",
     "ramda": "^0.23.0",
     "react": "^15.5.4",
     "react-bootstrap": "^0.32.0",
